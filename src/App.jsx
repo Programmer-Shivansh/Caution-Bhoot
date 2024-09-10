@@ -1,11 +1,12 @@
 import Experience from "./components/Experience"
 import { Canvas } from "@react-three/fiber"
+import Interfaces from "./components/Interface"
 function App() {
 
   return (
     <>
-      <Canvas shadows camera={{ position: [1, 1.5, 2.5], fov: 50 }}>
-        {/* <p>Canvas is not supported in your browser.</p> */}
+      <Interfaces/>
+        <Canvas shadows camera={{ position: [1, 1.5, 2.5], fov: 90 }} style={{ width: '100vw', height: '100vh', display: 'block' }}>
         <Experience />
       </Canvas>
     </>
