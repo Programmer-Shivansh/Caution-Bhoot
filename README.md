@@ -1,2 +1,2 @@
-Click On Link on your Own Risk
+Click On Link at your Own Risk
 
