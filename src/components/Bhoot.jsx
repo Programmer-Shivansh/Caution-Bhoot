@@ -10,7 +10,7 @@ import { SkeletonUtils } from 'three-stdlib'
 import { useCharacterAnimations } from '../context/CharAnimation'
 const Bhootiya = (props)=> {
   const group = React.useRef()
-  const { scene, animations } = useGLTF('../../models/bhoot.gltf')
+  const { scene, animations } = useGLTF('../../public/bhoot.gltf')
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene])
   const {setAnimations,animationsIndex} = useCharacterAnimations();
   const { nodes, materials } = useGraph(clone)
@@ -41,4 +41,4 @@ const Bhootiya = (props)=> {
   )
 }
 export default Bhootiya
-useGLTF.preload('../../models/bhoot.gltf')
+useGLTF.preload('../../public/bhoot.gltf')
